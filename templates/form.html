@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>（架空）野菜販売部売上情報</title>
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <!-- AxiosのCDNを追加 -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>（架空）野菜販売部売上情報</h1>
+        <form id="dataForm" style="text-align:left; margin:1px;">
+            <label for="product_code">商品コード</label>
+            <textarea id="productCode" name="productCode"  cols="15" rows="3"></textarea>
+            <br>
+            <button type="submit">データ取得</button>
+        </form>
+        <p id="idf_check"></p>
+        <div id="dataResultx">
+            <h2 style="text-align:left; margin:1px;">処理結果</h2>
+            <table id="table1" border="1"><!-- 表 -->
+                <tr>
+                    <td colspan="2">商品情報</td>
+                    <td colspan="4">売上情報</td>
+                </tr>
+                <tr>
+                    <!-- 見出し -->
+                    <td>商品コード</td>
+                    <td>商品名</td>
+                    <td>売上日</td>
+                    <td>数量</td>
+                    <td>単価</td>
+                    <td>金額</td>
+                </tr>
+            </table>
+                      </div>
+    <script src="../static/scripts.js"></script>
+</body>
+</html>
