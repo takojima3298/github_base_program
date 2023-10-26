@@ -25,7 +25,6 @@ async function fetchData(product_code_list_str) {
                 var cell4 = row.insertCell(3); 
                 var cell5 = row.insertCell(4); 
                 var cell6 = row.insertCell(5); 
-                document.getElementById("idf_check").textContent = get_data[$keyA]["idf_check"];
                 
                 cell1.innerHTML = get_data[$keyA]["product_code"]
                 cell2.innerHTML = get_data[$keyA]["product_name"]

@@ -1,6 +1,4 @@
-from flask import Flask, render_template, send_from_directory, request
-import requests
-from flask_cors import CORS
+from flask import Flask, render_template, send_from_directory
 
 app = Flask(__name__)
 #CORS(app, origins=["http://127.0.0.1:5000"])
